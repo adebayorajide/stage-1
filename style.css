@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;    
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1, img, p, h2 {
+    margin-bottom: 0.5rem;
+}
+
+img {
+    width: 400px;
+}
+
+div a {
+color: black; 
+text-decoration: none;  
+}
+
+div a:hover {
+    text-decoration: underline;  
+    color: red;      
+}
