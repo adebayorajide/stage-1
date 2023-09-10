@@ -17,6 +17,7 @@ let day = weekday[currentDate.getDay()];
 window.addEventListener("load", ()=>{
     slackName.innerHTML = profile.name;
     imageEl.src = profile.img;
+    imageEl.alt = profile.name;
     trackEl.innerHTML = profile.track;
     currentDay.innerHTML = day;
     currentTime.innerHTML = currentDate.getUTCMilliseconds();
