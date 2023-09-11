@@ -20,5 +20,5 @@ window.addEventListener("load", ()=>{
     imageEl.alt = profile.name;
     trackEl.innerHTML = profile.track;
     currentDay.innerHTML = day;
-    currentTime.innerHTML = `${currentDate.getUTCFullYear()}+"-"+${current date.getUTCMonth()}+"-"+${currentDate.getUTCDate()} + "T"${currentDate.getUTCHours()}+"-"${currentDate.getUTCMinutes()}+"-"+${currentDate.getUTCSeconds()}+"-"${currentDate.getUTCMilliseconds()} `;
+    currentTime.innerHTML = currentDate.getUTCMilliseconds();
 })
