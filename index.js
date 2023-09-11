@@ -10,17 +10,18 @@ const profile = {
     track: "Frontend Development",
 };
 
-let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const currentDate = new Date();
-let day = weekday[currentDate.getDay()];
-
-
-
-    slackName.innerHTML = profile.name;
+   slackName.innerHTML = profile.name;
     imageEl.src = profile.img;
     imageEl.alt = profile.name;
     trackEl.innerHTML = profile.track;
-    currentDay.innerHTML = day;
-    
-  setInterval(()=>{
-currentTime.innerHTML = currentDate.getTime()}, 100);    
+
+function updateTime(){
+let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const currentDate = new Date();
+let day = weekday[currentDate.getDay()];
+ currentDay.innerHTML = day;
+ currentTime.innerHTML =  currentDate.getTime();  
+}
+
+updateTime();
+setInterval(updateTime, 100);
