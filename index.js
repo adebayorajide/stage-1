@@ -14,11 +14,19 @@ let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 const currentDate = new Date();
 let day = weekday[currentDate.getDay()];
 
+Const updateUTC = () => {
+let utc = current date.getTime();
+currentTime.innerHTML = utc;
+}
+
 window.addEventListener("load", ()=>{
     slackName.innerHTML = profile.name;
     imageEl.src = profile.img;
     imageEl.alt = profile.name;
     trackEl.innerHTML = profile.track;
     currentDay.innerHTML = day;
-    currentTime.innerHTML = currentDate.getUTCMilliseconds();
+    updateUTC();
+    
 })
+
+setInterval(updateUTC, 100);
