@@ -15,8 +15,7 @@ const currentDate = new Date();
 let day = weekday[currentDate.getDay()];
 
 
-
-window.addEventListener("load", ()=>{
+
     slackName.innerHTML = profile.name;
     imageEl.src = profile.img;
     imageEl.alt = profile.name;
@@ -25,4 +24,3 @@ window.addEventListener("load", ()=>{
     
   setInterval(()=>{
 currentTime.innerHTML = currentDate.getTime()}, 100);    
-})
