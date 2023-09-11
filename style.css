@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-h1, img, p, h2 {
+.slack_name, img, p, .track {
     margin-bottom: 0.5rem;
 }
 
