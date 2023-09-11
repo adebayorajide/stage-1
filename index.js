@@ -15,7 +15,7 @@ const currentDate = new Date();
 let day = weekday[currentDate.getDay()];
 
 Const updateUTC = () => {
-let utc = current date.getTime();
+let utc = currentDate.getTime();
 currentTime.innerHTML = utc;
 }
 
